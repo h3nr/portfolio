@@ -4,8 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Henrique S. Oliveira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!-- Percentage -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    
+    <main id="container">
+        <aside id="bio-container">
+            <div id="bio-name">
+                <div id="typed-strings">
+                    <p>Henrique_Oliveira</p>
+                    <p>Henrique_<span class="highlight">Developer</span></p>
+                </div>
+                <span id="typed"></span>
+            </div>
+            <img id="bio-image" src="img/profile.jpeg" alt="Henrique Silva">
+            <p id="summary">Olá, meu nome é Henrique e estou buscando uma oportunidade como <span class="highlight">Desenvolvedor</span>.</p>
+            <p id="welcome-text">Seja bem-vindo!</p>
+            <ul id="social-container">
+                <li><a href="https://www.linkedin.com/in/henrique3712" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/henrique3712" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><span>henrique.s.oliveira@hotmail.com</span>
+            </div>
+        </aside>
+        <section id="about-container">
+            <section class="screen">
+                <span class="material-symbols-outlined" id="close-btn">
+                    close
+                </span>
+                <section class="curriculum">
+                    <h1>HENRIQUE SILVA OLIVEIRA</h1>
+                    <div class="data-sections">
+                        <h2>Dados Pessoais</h2>
+                        <div class="address">
+                            <span class="material-symbols-outlined">person_pin_circle</span><p>Para mais informações, acesse o <a href="https://www.linkedin.com/in/henrique3712" target="_blank" class="highlight">LinkedIn</a>.</p>                                
+                        </div>
+                    </div>
+                    <div class="data-sections">
+                        <h2>Objetivo</h2>
+                        <p>Estágio em Desenvolvimento</p>
+                    </div>               
+                    <div class="data-sections">
+                        <h2>Perfil Profissional</h2>
+                        <p>Competência e determinação para superar os desafios, compromisso em produzir
+                            trabalhos de qualidade e facilidade em adquirir novos conhecimentos.</p>
+                    </div>           
+                    <div class="data-sections">
+                        <h2>Formação Acadêmica</h2>
+                        <p>Engenharia da Computação - Cursando<br>Faculdade Anhanguera</p>
+                    </div>    
+                    <div class="data-sections">
+                        <h2>Cursos Adicionais</h2>
+                        <p>2014/2015 - Técnico em Informática (UniBH)
+                            <br>2012/2013 - Técnico em Eletrotécnica (Senai)</p>
+                    </div>      
+                    <div class="data-sections">
+                        <h2>Certificações</h2>
+                        <p>SAP Professional 4.0 - 2021
+                        <br>Power BI (Udemy) - 2023</p>
+                        <button class="back-btn"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</button>
+                    </div>      
+                </section>
+            </section>
+            <section class="screen">
+                <div id="content">
+                    <h1 id="name">Henrique_Oliveira</h1>
+                    <span class="highlight" id="title">Desenvolvedor</span>
+                    <p class="description">Como engenheiro de computação, estou em busca de uma oportunidade para iniciar minha
+                        carreira profissional como <span class="highlight">desenvolvedor</span>.</p>
+                    <p class="description">Atuando tanto no <span class="highlight">front-end</span> quanto no 
+                        <span class="highlight">back-end</span>, sou um entusiasta da tecnologia sempre buscando aprimorar minhas
+                        habilidades técnicas.</p>
+                    <button class="open-btn" id="screen-btn"><ion-icon name="document-text-outline"></ion-icon>Ver Currículo</button>
+                    <h2 id="skills-section-title">Minhas_Skills</h2>      
+                    <div class="skills-container">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="skills-title">Front-end</p>
+                                <div class="skill">
+                                    <i class="devicon-html5-plain" id="icon"><p>HTML</p></i>                                
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="75"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="75">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <i class="devicon-css3-plain" id="icon"><p>CSS</p></i>                               
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="65"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="65">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <i class="devicon-javascript-plain" id="icon"><p>JavaScript</p></i>                               
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="35"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="35">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="skills-title">Back-end</p>
+                                <div class="skill">
+                                    <i class="devicon-python-plain" id="icon"><p>Python</p></i>                                
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="45"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="45">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <i class="devicon-java-plain" id="icon"><p>Java</p></i>                               
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="40"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="40">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="skills-title">Databases</p>
+                                <div class="skill">
+                                    <i class="devicon-mysql-plain" id="icon"><p>MySQL</p></i>                                
+                                    <div class="box"><!--barra de progresso-->
+                                        <div class="circle" data-dots="20" data-percent="20"></div> <!--regular quantidade de dots e porcentagem--> 
+                                        <div class="text">
+                                            <span id="number" data-count-to="20">.</span> <!--'.' importante-->
+                                        </div>
+                                    </div>
+                                </div>                                                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Desenvolvido por Henrique</p>
+            </div>
+        </footer>
+    </main>
+    <script src="scripts.js"></script>
+    <!-- Vanilla Tilt -->    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	    VanillaTilt.init(document.querySelectorAll(".card"), {
+		    max: 25,
+		    speed: 400,
+            glare: true,
+            "max-glare": 0.4
+	    });
+    </script>
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
