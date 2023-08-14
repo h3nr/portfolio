@@ -670,6 +670,7 @@ body {
 @media (max-height: 670px) {
     #bio-container {
         padding-top: 10px;
+        min-height: 670px;
     }
 
     #bio-image {
